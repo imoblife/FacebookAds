@@ -166,7 +166,7 @@ public class FacebookAds implements NativeAdsManager.Listener, AdListener {
         na.setAdListener(this);
         nativeAds.add(na);
 
-        Log.i(getClass().getSimpleName(), "FB::load " + nativeAds.size() + " " + na.getAdTitle());
+        Log.i(getClass().getSimpleName(), "FB::load size=" + nativeAds.size() + ", getAdTitle=" + na.getAdTitle());
     }
 
 //    public void clearAdCache() {
@@ -235,7 +235,7 @@ public class FacebookAds implements NativeAdsManager.Listener, AdListener {
         // Setting the Text
         nativeAdSocialContext.setText(nativeAd.getAdSocialContext());
         toolbar_button_tv.setText(nativeAd.getAdCallToAction());
-        nativeAdTitle.setText(nativeAd.getAdTitle());
+        nativeAdTitle.setText(nativeAd.getAdTitle() + "("+nativeAd.hashCode()+")");
         nativeAdBody.setText(nativeAd.getAdBody());
 
         // Downloading and setting the ad icon.
@@ -366,6 +366,7 @@ public class FacebookAds implements NativeAdsManager.Listener, AdListener {
     }
 
     public void check() {
+        Log.i(getClass().getSimpleName(), "FB::check ");
         if(TimeUtil.isCountUp(getContext(), "FacebookAds.get(getContext()).reload()", FacebookAds.updateFrequency)) {
             FacebookAds.get(getContext()).reload();
         }

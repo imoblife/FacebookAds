@@ -44,7 +44,7 @@ public class TimeUtil {
         long current = last + 1;
         sp.edit().putLong(key, current).commit();
 
-        Log.i(TAG, "FB::isCountUp:: " + current + " % " + countLimit + " = " + (current % countLimit == 0));
+        Log.i(TAG, "FB::isCountUp " + current + " % " + countLimit + " = " + (current % countLimit == 0) + " key="+key);
         if (current % countLimit == 0) {
             return true;
         } else {
