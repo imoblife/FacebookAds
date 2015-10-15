@@ -20,6 +20,7 @@ public class MainActivity extends Activity implements FacebookAdListener {
     private LinearLayout ad_ll;
 
     public void onCreate(Bundle savedInstanceState) {
+        Log.i(getClass().getSimpleName(), "FB::onCreate getCountLoaded=" + FacebookAds.get(getContext()).getCountLoaded());
         super.onCreate(savedInstanceState);
         this.setContentView(R.layout.native_ad_list_demo);
 
@@ -34,7 +35,7 @@ public class MainActivity extends Activity implements FacebookAdListener {
     @TargetApi(Build.VERSION_CODES.HONEYCOMB)
     @Override
     public void onAdsLoaded(final NativeAd nativeAd) {
-        Log.i(getClass().getSimpleName(), "onAdsLoaded " + nativeAd);
+        Log.i(getClass().getSimpleName(), "FB::onAdsLoaded " + nativeAd.getAdTitle());
 
         View adView = FacebookAds.inflateAd(nativeAd, R.layout.ad_unit2, getContext());
         ad_ll.addView(adView);

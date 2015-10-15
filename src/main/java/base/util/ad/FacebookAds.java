@@ -69,8 +69,18 @@ public class FacebookAds implements NativeAdsManager.Listener, AdListener {
         return context;
     }
 
+    public int getCountLoaded() {
+        int count = 0;
+        for(NativeAd na : nativeAds) {
+            if(na.isAdLoaded()) {
+                count++;
+            }
+        }
+        return count;
+    }
+
     public void show() {
-        Log.i(getClass().getSimpleName(), "FB::check");
+        Log.i(getClass().getSimpleName(), "FB::show");
         checkShow();
         checkLoad();
     }
