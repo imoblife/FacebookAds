@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/main/java/base/util/ReleaseUtil.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/base/util/TimeUtil.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/base/util/ad/FacebookAdListener.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/base/util/ad/FacebookAds.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/com/facebook/samples/NativeAdSample/MainActivity.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/java/util/ReleaseUtil.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/java/util/TimeUtil.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/libs/picasso-2.5.2.jar" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/res/layout/ad_unit2.xml" charset="UTF-8" />
   </component>
