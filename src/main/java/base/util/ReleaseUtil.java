@@ -1,4 +1,4 @@
-package util;
+package base.util;
 
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
