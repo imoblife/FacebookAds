@@ -140,7 +140,7 @@ public class NativeAdSampleActivity extends Activity implements AdListener {
         // https://developers.facebook.com/docs/audience-network/guidelines/native-ads#native
         // for details. We recommend using the AdChoicesView
         if (adChoicesView == null) {
-            adChoicesView = new AdChoicesView(this, nativeAd);
+            adChoicesView = new AdChoicesView(this, nativeAd, true);
             adView.addView(adChoicesView, 0);
         }
 

@@ -15,6 +15,7 @@
                 android:orientation="vertical">
 
             <TextView
+                    android:id="@+id/ad_tv"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:text="Facebook Ad:"/>

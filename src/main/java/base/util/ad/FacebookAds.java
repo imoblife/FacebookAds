@@ -137,7 +137,7 @@ public class FacebookAds implements NativeAdsManager.Listener, AdListener {
             NativeAd na = nativeAds.get(i);
             if (na == ad) {
                 nativeAds.remove(i);
-                na.unregisterView();
+//                na.unregisterView();
                 na = null;
             }
         }
